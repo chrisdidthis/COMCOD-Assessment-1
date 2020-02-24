@@ -1,15 +1,44 @@
 body {
-    background-color: rgb(233, 236, 42);
+    background-color: rgba(247, 169, 25, 0.904);
+    font-family: comic, sans-serif;
 }
 
+img {
+    max-width: 100%;
+    /*this line prevents images from extending past the width of your display.
+    adaptive size of images
+    aka responsive design*/
+}
+
+
+
+
+.item {
+
+    /*background-color: rgb(239, 240, 247);*/
+    border: 2px dashed orangered;
+    margin-bottom: 40px;
+}
 
 .rick-rolled {
-
-     border: 2px dashed orangered;
+ 
 }
 
-h1 {
-    background-color: white;
-    color: yellow;
+.blinky-boi {
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(209, 25, 25);    }
+    49%{    color: rgb(255, 238, 0); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(255, 146, 4);    }
+}
+/*the pinacle of web design*/
+
+
+h2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 25px;
 }
