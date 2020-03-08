@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
+    
 </head>
 
 
@@ -22,6 +24,7 @@
 
     <main>
 
+        
         <h1>Chris Tsavdaridis</h1>
 
         <section class="item rick-rolled">
@@ -30,39 +33,60 @@
 
             <p>Click this little dood</p>
 
-            <button class="buttons">
+            <div class="buttons">
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me<a>
-            </button>
+            </div>
 
-            <button class="buttons blinky-boi">
-                <p>No, Click me!</p>
-                <audio src="Audio/Circus - Theme Song.mp3"></audio>
-            </button>
+
+            <div class="blinky-boi buttons">
+
+                <Audio id="circus">
+                    <source src="Audio/circus.mp3">
+                </Audio>
+    
+                <p onclick="document.getElementById('circus').play()">Click me for the Full experience!</p>
+    
+
+            </div>
+
+            <!--I DID IT, THIS IS HOW ITS DONE. REFER TO THIS YOU DUMB FUCK NEXT TIME
+            
+            audio id is to set up a link to refer to or smth
+        oncick =..... says when ths is clicked do this. idk why i have to use document but getElemendById('') just links to whatever Id i choose and .play plays it.-->
+
             
 
+
+
+
+
         </section>
-        
+
 
         <section class="iframe-wrap">
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_nmVr8NJVVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_nmVr8NJVVU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
         </section>
-        
+
         <section class="item studies-on-colour">
 
             <h2>The power of colour</h2>
 
             <img src="Images/small-pineapple.jpg" alt="Hip pineapple wearing sunglasses against yellow background">
-            
+
 
             <ul>
                 <li>
-                    <a href="http://www.artitudesdesign.com/yellow-color-psychology/" target="new">The power of Yellow <a>
+                    <a href="http://www.artitudesdesign.com/yellow-color-psychology/" target="new">The power of Yellow
+                        <a>
                 </li>
-<!--To make a link open in a new tab, use the target="new" attribute-->
+                <!--To make a link open in a new tab, use the target="new" attribute-->
                 <li>
-                    <a href="https://www.wonderopolis.org/wonder/do-red-and-yellow-make-you-hungry" target="new">Can Colours make you hungry?!?!</a>
+                    <a href="https://www.wonderopolis.org/wonder/do-red-and-yellow-make-you-hungry" target="new">Can
+                        Colours make you hungry?!?!</a>
                 </li>
             </ul>
 
@@ -75,7 +99,7 @@
                 <h1>Your Broswer sucks lol. </h1>
                 <p>Video tag not supported</p>
             </video>
-<!--When imbedding video, controls allows the user to pause/play. duh. Autoplay plays the video automatically unless it contains audio, to autoplay a video with audio you must mute it hence why the muted attribute is present. this however ruins the fun
+            <!--When imbedding video, controls allows the user to pause/play. duh. Autoplay plays the video automatically unless it contains audio, to autoplay a video with audio you must mute it hence why the muted attribute is present. this however ruins the fun
 Poster is like a thumbnail-->
         </section>
 
@@ -84,11 +108,13 @@ Poster is like a thumbnail-->
         <section class="item bigpineapple iframe-wrap">
             <p>Can't decide on a destination for vacation? Consider this</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14261.033797088961!2d152.9911101!3d-26.6722155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf02a35bd7207140!2sThe%20Big%20Pineapple!5e0!3m2!1sen!2sau!4v1583107940294!5m2!1sen!2sau" width="480" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14261.033797088961!2d152.9911101!3d-26.6722155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf02a35bd7207140!2sThe%20Big%20Pineapple!5e0!3m2!1sen!2sau!4v1583107940294!5m2!1sen!2sau"
+                width="480" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
         </section>
 
-                
+
 
 
     </main>
@@ -98,7 +124,7 @@ Poster is like a thumbnail-->
         <p>
             &copy; Pineapples unitied 2020
         </p>
-<!--use the &copy or &trade to create the copyright or trademark characters-->
+        <!--use the &copy or &trade to create the copyright or trademark characters-->
 
     </footer>
 
