@@ -3,13 +3,19 @@ body {
     font-family: comic, sans-serif;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
 
     body {
         background-color: rgba(247, 169, 25, 0.904);
         font-family: comic, sans-serif;
     }
+
 }
+
+h1 {
+    text-align: center;
+}
+
 
 img,
 video,
@@ -21,7 +27,9 @@ video,
 }
 
 
-
+.sampine {
+    text-align: center;
+}
 
 .item {
 
@@ -30,8 +38,32 @@ video,
     margin-bottom: 40px;
 }
 
+.column {
+    float:left;
+    width: 33.33%;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/*It says this is to clear the float? not too sure what that means, i removed the code and nothing changed but then why would the tutorial include it? on Monday if i remember ill ask the question assuming the government doesnt shut downn universities*/
+
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+
+
+
 .rick-rolled {
- 
+ text-align: center;
 }
 
 .blinky-boi {
@@ -61,7 +93,7 @@ h2 {
 	border-radius:6px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
-	cursor:pointer;
+	cursor:pointer; 
 	color:#666666;
 	font-family:Arial;
 	font-size:15px;
